@@ -1,11 +1,3 @@
-const cat = new Cat("Felis catus");
-console.log(cat.species);  // Output: Felis catus
-cat.makeSound();  // Output: purr
-
-const dog = new Dog("Canis lupus familiaris");
-console.log(dog.species);  // Output: Canis lupus familiaris
-dog.makeSound();  // Output: woof
-
 class Animal {
   constructor(species) {
     this.species = species;
@@ -39,6 +31,15 @@ class Dog extends Animal {
     this.bark();
   }
 }
+const cat = new Cat("Felis catus");
+console.log(cat.species);  // Output: Felis catus
+cat.makeSound();  // Output: purr
 
+const dog = new Dog("Canis lupus familiaris");
+console.log(dog.species);  // Output: Canis lupus familiaris
+dog.makeSound();  // Output: woof
+window.Animal=Animal;
+window.Cat=Cat;
+window.Dog=Dog
 
 
