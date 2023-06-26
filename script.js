@@ -16,11 +16,18 @@ class Cat extends Animal {
   purr() {
     console.log("purr");
   }
+	 makeSound() {
+    this.purr();
+  }
 }
 
 class Dog extends Animal {
   bark() {
     console.log("woof");
+  }
+	
+	makeSound() {
+    this.bark();
   }
 }
 const cat = new Cat("Felis catus");
@@ -30,6 +37,7 @@ cat.makeSound();  // Output: purr
 const dog = new Dog("Canis lupus familiaris");
 console.log(dog.species);  // Output: Canis lupus familiaris
 dog.makeSound();  // Output: woof
+
 window.Animal=Animal;
 window.Cat=Cat;
 window.Dog=Dog;
