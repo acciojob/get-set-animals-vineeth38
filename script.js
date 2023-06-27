@@ -10,18 +10,18 @@ class Animal {
 	}
 }
 
-class Dog extends Animal {
-	purr(){
+
+
+class Cat extends Animal {
+	bark(){
 		console.log("purr");
 	}
 }
-
-class Cat extends Animal {
+class Dog extends Animal {
 	bark(){
 		console.log("woof");
 	}
 }
-
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
